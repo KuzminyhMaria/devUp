@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Cleanvertising';
+    src: local('Cleanvertising'),
+    url('../fonts/cleanvertising-light.ttf') format('truetype');
+    src: local('Cleanvertising'),
+    url('../fonts/cleanvertising-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import "blocks/_variables";
+@import "blocks/_mainNavigationMenu";
+@import "blocks/main/_welcome";
+@import "blocks/main/_addInExamples";
+@import "blocks/main/_videoAddInExamples";
+@import "blocks/_footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body {
+    //max-width: $width-main-max;
+    //min-width: $width-main-min;
+    background: $colorBackgroundPage;
+    font-family: $main-font;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: 1/2/2/4;
+    height: 5vh;
+    padding: 2vh 0 3vh 0;
+}
+
+.nameOfSite {
+    font-family: 'Cleanvertising';
+    font-size: 2.5em;
+    font-weight: 700;
+    color: $colorCompanyName;
+}
+
+.container {
+    //margin: 0 auto;
+    //width: 1380px;
+    //width: 1900px;
+    display: grid;
+    grid-template: repeat(26, 10vh)/repeat(12, 1fr);
+    grid-column-gap: 10px;
+}
+
+main {
+    grid-area: 2/1/23/13;
+    display: grid;
+    grid-template: repeat(22, 10vh)/repeat(12, 1fr);
+    grid-column-gap: 10px;
+}
+
+footer {
+    grid-area: 23/1/27/13;
+    display: grid;
+    grid-template: repeat(4, 10vh)/repeat(12, 1fr);
+    grid-column-gap: 10px;
+    background: rgba(0, 0, 0, .9);
+    transition-duration: .3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
