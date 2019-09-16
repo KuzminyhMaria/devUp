@@ -7,26 +7,35 @@ p.footerText {
     margin: 4vh 0;
 }
 
-.socialIcons {
-    grid-area: 2/5/4/7;
-    display: grid;
-    grid-template: repeat(4, auto)/repeat(1);
+.contacts {
+    grid-area: 1/2/5/12;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    margin: 10vh 0;
+}
+
+.socialIcons {
+    list-style-type: none;
+    margin-right: 10%;
 }
 
 .communicationIcons {
-    grid-area: 2/7/4/10;
-    display: grid;
-    grid-template: repeat(3, auto)/repeat(1);
-    align-items: center;
+    list-style-type: none;
 }
 
-.socialIcons__a {
-    width: 130px;
+.socialIcons__li {
+    width: 118px;
 }
 
-.communicationIcons__a {
-    width: 200px;
+.communicationIcons__li {
+    width: 183px;
+}
+
+.socialIcons__li,
+.communicationIcons__li {
+    padding-top: 20px;
 }
 
 .socialIcons__a:hover {
@@ -61,12 +70,12 @@ p.footerText {
     line-height: 2;
 }
 
-@media (max-width: 1000px) {
-    .socialIcons {
-        grid-area: 2/4/4/7;
+@media (max-width: 404px) {
+    .contacts {
+        flex-direction: column;
     }
-    
-    .communicationIcons {
-        grid-area: 2/8/4/12;
+
+    .socialIcons {
+        margin-bottom: 5vh;
     }
 }
