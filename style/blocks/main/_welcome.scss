@@ -1,0 +1,101 @@
+.welcome {
+    background: url(../images/SC.jpg) no-repeat;
+    background-size: 100vw 90vh;
+    max-width: 100%;
+    height: 90vh;
+    grid-column: 1/13;
+    display: grid;
+    grid-template: repeat(9, 10vh)/repeat(12, 1fr);
+    grid-column-gap: 10px;
+}
+
+.welcome__h3,
+.welcome__h2 {
+    color: $color-text-light;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.welcomeTitle {
+    grid-area: 3/3/4/11;
+}
+
+.welcome__h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.welcome__h2 {
+    font-size: 3em;
+}
+
+.welcome__p {
+    color: $color-text-light;
+    line-height: 1.5;
+    grid-area: 5/3/7/7;
+    text-align: justify;
+    //width: 35vw;
+}
+
+@media (max-width: 1329px) {
+    .welcome__p {
+        grid-area: 5/3/7/9;
+    }
+}
+
+@media (max-width: 879px) {
+    .welcome__p {
+        grid-area: 5/3/7/10;
+    }
+}
+
+@media (max-width: 754px) {
+    .welcome__p {
+        grid-area: 5/3/7/11;
+    }
+}
+
+
+
+@media (max-width: 659px) {
+    .welcomeTitle {
+        grid-area: 3/2/4/12;
+    }
+
+    .welcome__h3 {
+        font-size: 1.5em;
+    }
+
+    .welcome__h2 {
+        font-size: 2.5em;
+    }
+
+    .welcome__p {
+        grid-area: 4/2/7/12;
+        margin-top: 4vh;
+    }
+}
+
+@media (max-width: 439px) {
+    .welcome__h3 {
+        font-size: 1em;
+    }
+
+    .welcome__h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 354px) {
+    .welcome__h3 {
+        font-size: 1em;
+    }
+
+    .welcome__h2 {
+        font-size: 1.5em;
+    }
+
+    .welcome__p {
+        margin-top: 2vh;
+    }
+}
